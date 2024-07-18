@@ -64,7 +64,7 @@ public final class PageRank {
                         join(ranks).
                         flatMapToPair(kv -> {
                             Integer websiteId = kv._1();
-                            Tuple2<Website, Double> tuple = kv._2();
+                            Tuple2<Website, Double> value = kv._2();
                             Website edges = kv._2()._1();
                             Double currentRank = kv._2()._2();
 
